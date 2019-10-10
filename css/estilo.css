@@ -33,9 +33,18 @@ nav#menu ul{
 nav#menu li{
     display: inline-block;
     background-color: #dddddd;
-    padding: 10px;
     margin: 2px;
     transition: background-color 1s;
+}
+
+nav#menu ul#LisMenu button{
+    padding: 10px;
+    font-size: 13pt;
+}
+
+nav#menu ul#LisMenu button:hover{
+    padding: 10px;
+    font-size: 13pt;
 }
 
 nav#menu a{
