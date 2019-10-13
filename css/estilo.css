@@ -1,21 +1,27 @@
 @charset "UTF-8";
 
+body{
+    background-image: url("../fotos/teste.jpeg");
+    background-attachment: fixed;
+    background-size: 103%;
+    background-repeat: no-repeat;
+}
+
 header#cabecalho h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25pt;
-    color: #606060;
+    color: #000000;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-    padding: 20px;
+    padding: 3%;
     margin-bottom: 0px;
     margin-top: -5px;
 }
 
 header#cabecalho h2{
     font-family: Arial, Helvetica, sans-serif;
-    color: #888888;
+    color: #000000;
     font-size: 15pt;
-    padding: 0px;
-    padding-left: 20px;
+    padding-left: 2%;
     margin-top: -20px;
 }
 
@@ -31,8 +37,13 @@ nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
+<<<<<<< HEAD
     top: 0px;
     left: 900px;
+=======
+    top: -10px;
+    left: 0%;
+>>>>>>> a868767f53c562ef97b0fed3c08f486f746aa974
 }
 
 nav#menu li{
@@ -41,8 +52,21 @@ nav#menu li{
     border-color: #dddddd;
     margin: 2px;
     transition: background-color 1s;
+<<<<<<< HEAD
     padding: 10px;
     cursor: pointer;
+=======
+}
+
+nav#menu ul#LisMenu button{
+    padding: 10px;
+    font-size: 13pt;
+}
+
+nav#menu ul#LisMenu button:hover{
+    color: #ffffff;
+    text-decoration: underline;
+>>>>>>> a868767f53c562ef97b0fed3c08f486f746aa974
 }
 
 nav#menu a{
@@ -55,7 +79,15 @@ nav#menu li:hover{
     transition: 250ms;
 }
 
+img#q4{
+    width: 600px;
+    height: 400px;
+}
+
 footer#rodape{
+    bottom: 0;
+    position: fixed;
+    width: 90%;
     clear: both;
     border-top: 1px solid #606060;
 }
@@ -63,4 +95,37 @@ footer#rodape{
 footer#rodape p{
     text-align: center;
 }
+
+
+nav#cadastro {
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.field {
+    top: 100%;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 5px;
+    border-bottom-color: #ffffff;
+}
+
+nav#butaoCadastro {
+    width: 70%;
+    margin: auto;
+    padding: 8px;
+    text-align: center;
+}
+
+.field2 {
+    width: 11%;
+    margin-bottom: 9px;
+    font-size: 1em;
+    padding: 3px;
+    border-bottom-color: #ffffff;
+}
+
 
