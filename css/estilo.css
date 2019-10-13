@@ -12,7 +12,7 @@ header#cabecalho h1{
     font-size: 25pt;
     color: #000000;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-    padding: 3%;
+    padding: 2%;
     margin-bottom: 0px;
     margin-top: -5px;
 }
@@ -37,13 +37,8 @@ nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-<<<<<<< HEAD
-    top: 0px;
-    left: 900px;
-=======
-    top: -10px;
-    left: 0%;
->>>>>>> a868767f53c562ef97b0fed3c08f486f746aa974
+    top: -20px;
+    left: -38px;
 }
 
 nav#menu li{
@@ -52,10 +47,8 @@ nav#menu li{
     border-color: #dddddd;
     margin: 2px;
     transition: background-color 1s;
-<<<<<<< HEAD
     padding: 10px;
     cursor: pointer;
-=======
 }
 
 nav#menu ul#LisMenu button{
@@ -66,7 +59,6 @@ nav#menu ul#LisMenu button{
 nav#menu ul#LisMenu button:hover{
     color: #ffffff;
     text-decoration: underline;
->>>>>>> a868767f53c562ef97b0fed3c08f486f746aa974
 }
 
 nav#menu a{
@@ -86,6 +78,8 @@ img#q4{
 
 
 img#q5{
+    margin-top: 0%;
+    margin-left: 35%;
     width: 500px;
     height: 300px;
 }
@@ -101,7 +95,6 @@ footer#rodape{
 footer#rodape p{
     text-align: center;
 }
-
 
 nav#cadastro {
     width: 40%;
@@ -134,4 +127,23 @@ nav#butaoCadastro {
     border-bottom-color: #ffffff;
 }
 
+.field3 {
+    width: 11%;
+    margin-bottom: 9px;
+    font-size: 1em;
+    padding: 3px;
+    border-bottom-color: #ffffff;
+}
+
+.texto {
+    display: table-cell;
+    float: left;
+    width: 600px;
+    margin-top: -2%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 22px;
+    font-family: Georgia;
+    font-style: italic;
+}
 
