@@ -84,6 +84,12 @@ img#q4{
     height: 400px;
 }
 
+
+img#q5{
+    width: 500px;
+    height: 300px;
+}
+
 footer#rodape{
     bottom: 0;
     position: fixed;
