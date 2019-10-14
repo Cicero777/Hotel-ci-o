@@ -87,7 +87,7 @@ img#q5{
 footer#rodape{
     bottom: 0;
     position: fixed;
-    width: 90%;
+    width: 99%;
     clear: both;
     border-top: 1px solid #606060;
 }
@@ -113,26 +113,15 @@ nav#cadastro {
 }
 
 nav#butaoCadastro {
-    width: 70%;
-    margin: auto;
-    padding: 8px;
-    text-align: center;
+    width: 100%;
+    padding-top: 220%;
+    padding-left: 430%;
 }
 
-.field2 {
-    width: 11%;
-    margin-bottom: 9px;
-    font-size: 1em;
-    padding: 3px;
-    border-bottom-color: #ffffff;
-}
-
-.field3 {
-    width: 11%;
-    margin-bottom: 9px;
-    font-size: 1em;
-    padding: 3px;
-    border-bottom-color: #ffffff;
+nav#butaoQuarto {
+    width: 100%;
+    padding-top: 215%;
+    padding-left: 200%;
 }
 
 .texto {
@@ -143,7 +132,6 @@ nav#butaoCadastro {
     margin-left: 35%;
     text-align: center;
     font-size: 22px;
-    font-family: Georgia;
+    font-family: bold;
     font-style: italic;
 }
-
