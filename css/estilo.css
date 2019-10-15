@@ -114,8 +114,14 @@ nav#cadastro {
 
 nav#butaoCadastro {
     width: 100%;
-    padding-top: 220%;
-    padding-left: 430%;
+    padding-top: 140%;
+    padding-left: 265%;
+}
+
+nav#butaoLogin {
+    width: 100%;
+    padding-top: 90%;
+    padding-left: 285%;
 }
 
 nav#butaoQuarto {
