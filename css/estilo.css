@@ -123,18 +123,21 @@ nav#butaoCadastro {
     margin: 80%;
 }
 
-#butaoQuarto {
-    width: 50%;
-    padding-top: 215%;
-    padding-left: 200%;
+#butaoQuartos {
+    width: 450%;
+    margin: 80%;
+
+}
+
+img#q6{
+    width: 300px;
+    height: 200px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
 }
 
 .texto {
-    display: table-cell;
-    float: left;
-    width: 600px;
-    margin-top: -2%;
-    margin-left: 35%;
     text-align: center;
     font-size: 22px;
     font-family: bold;
