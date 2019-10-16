@@ -5,6 +5,7 @@ body{
     background-attachment: fixed;
     background-size: 103%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 header#cabecalho h1{
@@ -96,7 +97,7 @@ footer#rodape p{
     text-align: center;
 }
 
-nav#cadastro {
+nav#cadastro{
     width: 40%;
     margin: auto;
     padding: 10px;
@@ -113,19 +114,17 @@ nav#cadastro {
 }
 
 nav#butaoCadastro {
-    width: 100%;
-    padding-top: 140%;
-    padding-left: 265%;
+    width: 400%;
+    margin: 120%;
 }
 
-nav#butaoLogin {
-    width: 100%;
-    padding-top: 90%;
-    padding-left: 285%;
+#butaoLogin {
+    width: 450%;
+    margin: 80%;
 }
 
-nav#butaoQuarto {
-    width: 100%;
+#butaoQuarto {
+    width: 50%;
     padding-top: 215%;
     padding-left: 200%;
 }
