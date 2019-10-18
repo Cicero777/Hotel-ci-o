@@ -221,3 +221,69 @@ img#q{
     width: 1500px;
     height: 750px;
 }
+
+
+/* Configurações do link Contatos */
+
+.TituloContatos {
+    font-size: 22px;
+    font-family: bold;
+    font-style: italic;
+    margin-top: 3%;
+    margin-left: 6%;
+    color: aqua;
+    font-size: 15px;
+}
+
+.SubTituloContatos{
+    font-size: 22px;
+    font-family: bold;
+    font-style: italic;
+    margin-top: 0%;
+    margin-left: 6%;
+    color: #000000;
+    font-size: 20px;
+}
+
+.BotNome {
+    top: 100%;
+    width: 30%;
+    
+    margin-top: 0%;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    margin-inline-start: 90px;
+    
+    font-size: 1em;
+    padding: 5px;
+    border-bottom-color: #ffffff;
+}
+
+.BotE-mail {
+    top: 100%;
+    width: 30%;
+    
+    margin-top: 0%;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    margin-inline-start: 10px;
+    
+    font-size: 1em;
+    padding: 5px;
+    padding-right: 1%;
+    border-bottom-color: #ffffff;
+}
+
+.BotTexto {
+    top: 100%;
+    width: 62%;
+    
+    margin-inline-start: 90px;
+    font-size: 1em;
+
+    padding: 3px;
+    padding-bottom: 140px;
+    padding-right: 1%;
+    border-bottom-color: #ffffff;
+}
+
