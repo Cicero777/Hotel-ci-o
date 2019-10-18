@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 body{
-<<<<<<< HEAD
     background-color: #ffffff;
     overflow: hidden;
 }
@@ -53,43 +52,11 @@ header#meio h2{
     margin-bottom: 0px;
     margin-top: -2%;
     text-align: center;
-=======
-    background-image: url("../fotos/teste.jpeg");
-    background-attachment: fixed;
-    background-size: 103%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-header#cabecalho h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25pt;
-    color: #000000;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-    padding: 2%;
-    margin-bottom: 0px;
-    margin-top: -5px;
-}
-
-header#cabecalho h2{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    font-size: 15pt;
-    padding-left: 2%;
-    margin-top: -20px;
-}
-
-header#cabecalho hgroup h1{
-    top: -20px;
->>>>>>> 3ceae1359c3138438954af6d5a17c9e62f96534b
 }
 
 nav#menu{
     display: block;
-<<<<<<< HEAD
     padding-top: 0%;
-=======
->>>>>>> 3ceae1359c3138438954af6d5a17c9e62f96534b
 }
 
 nav#menu ul{
@@ -102,41 +69,19 @@ nav#menu ul{
 
 nav#menu li{
     display: inline-block;
-<<<<<<< HEAD
-=======
-    background-color: #dddddd;
-    border-color: #dddddd;
->>>>>>> 3ceae1359c3138438954af6d5a17c9e62f96534b
     margin: 2px;
     transition: background-color 1s;
     padding: 10px;
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
-nav#menu ul#LisMenu button{
-    padding: 10px;
-    font-size: 13pt;
-}
-
-nav#menu ul#LisMenu button:hover{
-    color: #ffffff;
-    text-decoration: underline;
-}
-
->>>>>>> 3ceae1359c3138438954af6d5a17c9e62f96534b
 nav#menu a{
     color: #000000;
     text-decoration: none;
 }
 
 nav#menu li:hover{
-<<<<<<< HEAD
     color: #0902ff;
-=======
-    color: #ffffff;
->>>>>>> 3ceae1359c3138438954af6d5a17c9e62f96534b
     transition: 250ms;
 }
 
@@ -164,12 +109,7 @@ footer#rodape{
     bottom: 0;
     position: fixed;
     width: 99%;
-<<<<<<< HEAD
     background-color: #0902ff;
-=======
-    clear: both;
-    border-top: 1px solid #606060;
->>>>>>> 3ceae1359c3138438954af6d5a17c9e62f96534b
 }
 
 footer#rodape p{
@@ -177,20 +117,13 @@ footer#rodape p{
 }
 
 nav#cadastro{
-<<<<<<< HEAD
     padding-top: 10%;
     width: 40%;
     margin: auto;
-=======
-    width: 40%;
-    margin: auto;
-    padding: 10px;
->>>>>>> 3ceae1359c3138438954af6d5a17c9e62f96534b
     text-align: center;
 }
 
 .field {
-<<<<<<< HEAD
     width: 50%;
     margin-bottom: 10px;
     padding: 5px;
@@ -202,32 +135,6 @@ nav#butaoCadastro {
 
 #butaoLogin {
     padding-top: 4%;
-=======
-    top: 100%;
-    width: 50%;
-    margin-bottom: 10px;
-    font-size: 1em;
-    padding: 5px;
-    border-bottom-color: #ffffff;
-}
-
-nav#butaoCadastro {
-    width: 100%;
-    margin: 100%;
-    padding-left: 80%;
-}
-
-#butaoLogin {
-    width: 100%;
-    margin: 50%;
-    padding-left: 80%;
-}
-
-#butaoQuartos {
-    width: 100%;
-    margin: 80%;
-    padding-left: 80%;
->>>>>>> 3ceae1359c3138438954af6d5a17c9e62f96534b
 }
 
 .texto {
@@ -314,49 +221,3 @@ img#q{
     width: 1500px;
     height: 750px;
 }
-
-
-/* Configurações do link Contatos */
-
-.TituloContatos {
-    font-size: 22px;
-    font-family: bold;
-    font-style: italic;
-    margin-top: 9%;
-    margin-left: 6%;
-    color: aqua;
-    font-size: 15px;
-}
-
-.SubTituloContatos{
-    font-size: 22px;
-    font-family: bold;
-    font-style: italic;
-    margin-top: 0%;
-    margin-left: 6%;
-    color: #000000;
-    font-size: 20px;
-}
-
-.BotMenores {
-    top: 100%;
-    width: 50%;
-    margin-bottom: 30px;
-    margin-inline-start: 90px;
-    
-    font-size: 1em;
-    padding: 5px;
-    border-bottom-color: #ffffff;
-}
-
-.BotTexto {
-    top: 100%;
-    width: 50%;
-    margin-bottom: 10px;
-    margin-inline-start: 90px;
-
-    font-size: 1em;
-    padding: 5px;
-    border-bottom-color: #ffffff;
-}
-
