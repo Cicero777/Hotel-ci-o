@@ -14,11 +14,33 @@ body{
 }
 
 footer#cabecalho{
-    background-color: #0902ff;
+    background-color: #19213b;
+    margin-top: -1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-footer#cabecalho p2{
-    padding-top: 0%;
+.p2{
+    color: white;
+}
+
+.icons{
+    width: 15px;
+    height: 15px;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+.icons2{
+    width: 15px;
+    height: 15px;
+    margin-left: 55%;
+}
+
+.icons3{
+    width: 15px;
+    height: 15px;
+    margin-left: 1%;
 }
 
 footer#cabecalho2{
@@ -81,7 +103,7 @@ nav#menu a{
 }
 
 nav#menu li:hover{
-    color: #0902ff;
+    color: aqua;
     transition: 250ms;
 }
 
@@ -109,11 +131,12 @@ footer#rodape{
     bottom: 0;
     position: fixed;
     width: 99%;
-    background-color: #0902ff;
+    background-color: #19213b;
 }
 
 footer#rodape p{
     text-align: center;
+    color: white;
 }
 
 nav#cadastro{
@@ -215,6 +238,11 @@ l{
     transition: opacity .4s linear;
 }
 
+img#x{
+    width: 200px;
+    height: 100px;
+}
+
 img#q{
     margin-top: -6%;
     margin-left: -26%;
@@ -286,4 +314,3 @@ img#q{
     padding-right: 1%;
     border-bottom-color: #ffffff;
 }
-
