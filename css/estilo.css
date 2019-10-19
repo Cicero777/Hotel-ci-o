@@ -314,3 +314,42 @@ img#q{
     padding-right: 1%;
     border-bottom-color: #ffffff;
 }
+
+/* Configurações do link Sobre */
+
+.textoSobre {
+    float: left;
+    max-width: 500px;
+    margin-left: 6%;
+
+    font-size: 22px;
+    font-family: bold;
+    font-style: italic;
+}
+
+img#q9{
+    float: right;
+    margin-left: 1%;
+    margin-right: 15%;
+    margin-bottom: 1%;
+
+    width: 250px;
+    height: 150px;
+    
+}
+
+img#q10{
+    float: right;
+    margin-bottom: 1%;
+
+    width: 250px;
+    height: 150px;
+}
+
+img#q11{
+    float: right;
+    margin-right: 15%;
+
+    width: 513px;
+    height: 180px;
+}
