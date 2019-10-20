@@ -5,17 +5,30 @@ body{
     overflow: hidden;
 }
 
-#body{
-    background-image: url("../fotos/teste.jpeg");
-    background-attachment: fixed;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
+.container {
+    position: relative;
+}
+
+#badyimagem{
+    margin-top: 0%;
+    margin-left: -8px;
+    width: 1920px;
+    height: 600px;
+    position: absolute;
+}
+
+#posicaoTexto {
+    position: absolute;
+    font-size: 32px;
+    left: 30%;
+    top: 200px;
 }
 
 footer#cabecalho{
     background-color: #19213b;
     margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -1%;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -27,33 +40,55 @@ footer#cabecalho{
 .icons{
     width: 15px;
     height: 15px;
-    margin-left: 2%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 2px;
+    margin-bottom: -3px;
 }
 
 .icons2{
     width: 15px;
     height: 15px;
-    margin-left: 55%;
+    margin-left: 64%;
 }
 
 .icons3{
     width: 15px;
     height: 15px;
-    margin-left: 1%;
+    margin-left: 8px;
+}
+
+.icons4{
+    width: 35px;
+    height: 35px;
+    margin-left: 4%;
+    margin-bottom: -10px;
 }
 
 footer#cabecalho2{
     padding-left: 50%;
-    font-size: 1em;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
+    margin-top: 0%;
+    margin-left: -1%;
+    margin-right: -1%;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
 }
 
 .fieldCabecalho2{
-    margin-left: 10%;
+    margin-left: 20%;
     margin-bottom: 2%;
-    border-bottom-color: #ffffff;
     text-align: center;
+    font-size: 100%;
+    border-bottom-color: gray;
+    border-radius: 8px;
+}
+
+
+.logo{
+    width: 200px;
+    height: 50px;
+    margin-top: 0%;
+    margin-left: -45%;
+    position: absolute;
 }
 
 header#meio h1{
@@ -62,7 +97,6 @@ header#meio h1{
     font-size: 15pt;
     margin-top: 11%;
     text-align: center;
-
 }
 
 header#meio h2{
@@ -74,6 +108,77 @@ header#meio h2{
     margin-bottom: 0px;
     margin-top: -2%;
     text-align: center;
+}
+
+h3{
+    color: white;
+    font-size: 2em;
+    margin-top: -1%;
+    margin-left: -10%;
+}
+
+header#telaFlutuante{
+    background-color: #ffffff;
+    margin-top: 20%;
+    margin-left: -20%;
+    margin-right: 10%;
+    padding-bottom: 3%;
+    -webkit-box-shadow: 0px 0px 100px rgba(0,0,0,.8);
+    border-radius: 30px;
+}
+
+.telaFlutuante{
+    padding-top: 1px;
+    padding-left: 2%;
+}
+
+.telaFlutuante2{
+    text-align: center;
+    font-size: 60%;
+    border-bottom-color: gray;
+    border-radius: 8px;
+    height: 2px;
+}
+
+.caixaIndeix{
+    width: 75%;
+    padding-right: -2px;
+    padding-top: 25px;
+    margin-right: -10px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.caixaIndeix2{
+    width: 50%;
+    padding-right: -2px;
+    padding-top: 25px;
+    margin-right: -100px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header#telaFlutuante h4{
+    margin-top: 1%;
+    color: aqua;
+}
+
+header#telaFlutuante h5{
+    margin-top: -3%;
+}
+
+.espaco{
+    display: flex;
+}
+
+main {
+    margin-left: 2px;
+}
+
+.flex-centralizado {
+    display: flex;
 }
 
 nav#menu{
@@ -130,7 +235,8 @@ img#q6{
 footer#rodape{
     bottom: 0;
     position: fixed;
-    width: 99%;
+    padding-left: 38%;
+    padding-right: 37%;
     background-color: #19213b;
 }
 
@@ -140,24 +246,40 @@ footer#rodape p{
 }
 
 nav#cadastro{
-    padding-top: 10%;
+    padding-left: 0%;
+    padding-top: 2%;
     width: 40%;
-    margin: auto;
+    margin-top: 10%;
+    margin-left: 30%;
     text-align: center;
+    border-radius: 30px;
+    background-color: #19213b;
+    -webkit-box-shadow: 0px 0px 1000px rgba(0,0,0,.8);
 }
 
 .field {
     width: 50%;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 nav#butaoCadastro {
-    padding-top: 4%;
+    padding-top: 2%;
+    width: 40%;
+    margin: auto;
+    text-align: center;
 }
 
-#butaoLogin {
-    padding-top: 4%;
+.cor{
+    color: white;
+}
+
+nav#butaoLogin {
+    padding-top: 2%;
+    width: 40%;
+    margin: auto;
+    text-align: center;
 }
 
 .texto {
@@ -167,13 +289,16 @@ nav#butaoCadastro {
     font-style: italic;
 }
 
+
+/* Configurações da Galeria */
+
+
 l{
     width: 880px;
     list-style: none;
     display: flex;
-    margin-left: 3%;
-    margin-top: 3%;
-    align-items: center;
+    margin-left: 20%;
+    margin-top: 1%;
 }
 
 .min{
@@ -256,7 +381,6 @@ img#q{
 .TituloContatos {
     font-size: 22px;
     font-family: bold;
-    font-style: italic;
     margin-top: 3%;
     margin-left: 6%;
     color: aqua;
@@ -266,7 +390,7 @@ img#q{
 .SubTituloContatos{
     font-size: 22px;
     font-family: bold;
-    font-style: italic;
+    margin-top: 0%;
     margin-left: 6%;
     color: #000000;
     font-size: 20px;
@@ -283,7 +407,7 @@ img#q{
     
     font-size: 1em;
     padding: 5px;
-    border-bottom-color: #ffffff;
+    border-bottom-color: gray;
 }
 
 .BotE-mail {
@@ -298,7 +422,7 @@ img#q{
     font-size: 1em;
     padding: 5px;
     padding-right: 1%;
-    border-bottom-color: #ffffff;
+    border-bottom-color: gray;
 }
 
 .BotTexto {
@@ -311,7 +435,7 @@ img#q{
     padding: 3px;
     padding-bottom: 140px;
     padding-right: 1%;
-    border-bottom-color: #ffffff;
+    border-bottom-color: gray;
 }
 
 /* Configurações do link Sobre */

@@ -5,41 +5,72 @@
         <title>Hotel Cição</title>
         <link rel="stylesheet" href="css/estilo.css" />
     </head>
-    <body id="body">
+    <body>
         <footer id="cabecalho" class="p2">
-            <nav id="telefone">
+            <nav>
                 <img class="icons" src="icons/telephone.png">
-                 (123) 456-789-11230
+                (123) 456-789-11230
                 <img class="icons" src="icons/message-icon-11-256.png">
                 hotelcicao@cicao.com
-                <img class="icons2" src="icons/facebook.png">
-                <img class="icons3" src="icons/instagram.png">
-                <img class="icons3" src="icons/whatsapp.png">
-                <img class="icons3" src="icons/twitter.png">
+                <a href=""><img class="icons2" src="icons/facebook.png"></a>
+                <a href=""><img class="icons3" src="icons/instagram.png"></a>
+                <a href=""><img class="icons3" src="icons/whatsapp.png"></a>
+                <a href=""><img class="icons3" src="icons/twitter.png"></a>
+                <a href="login.html"><img class="icons4" src="icons/login.png"></a>
             </nav>
         </footer>
-        <footer id="cabecalho2">
+        <footer id="cabecalho2" class="p2">
+            <img class="logo" src="icons/logo.jpg">
             <nav id="menu">
                 <form>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="quartos.html"><li>Quartos</li></a>
-                    <a href="galeria.html"><li>Galeria</li></a>
-                    <a href="contatos.html"><li>Contatos</li></a>
-                    <a href="sobre.html"><li>Sobre</li></a>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="quartos.html"><li>QUARTOS</li></a>
+                    <a href="galeria.html"><li>GALERIA</li></a>
+                    <a href="contatos.html"><li>CONTATOS</li></a>
+                    <a href="sobre.html"><li>SOBRE</li></a>
                     <input class="fieldCabecalho2" type="text" placeholder="buscar" id="txtbuscar">
                 </form>
             </nav>
         </footer>
-
-        <header id="meio">
-            <hgroup>
-                <h1>HOTEL</h1>
-                <h2>BEM VINDO AO HOTEL CIÇÃO</h2>
-            </hgroup>
-        </header>
+        <div class="container">
+            <img id="badyimagem" src="fotos/index.jpg">
+            <label id="posicaoTexto">
+                <header>
+                    <hgroup>
+                        <h3>BEM VINDO AO HOTEL CIÇÃO</h3>
+                    </hgroup>
+                </header>
+                <header id="telaFlutuante" class="telaFlutuante">
+                    <h4>Encontrar quartos:</h4>
+                    <main class="espaco">
+                        <form>
+                            <h5>Check-in</h5>
+                            <input class="caixaIndeix" type="text" placeholder="dd/mm/aa" id="txtData">
+                        </form>
+                        <form>
+                            <h5>Check-out</h5>
+                            <input class="caixaIndeix" type="text" placeholder="dd/mm/aa" id="txtData">
+                        </form>
+                        <form>
+                            <h5>Adultos</h5>
+                            <input class="caixaIndeix2" type="text" placeholder="00" id="txtData">
+                        </form>
+                        <form>
+                            <h5>Crianças</h5>
+                            <input class="caixaIndeix2" type="text" placeholder="00" id="txtData">
+                        </form>
+                        <nav id="menu">
+                            <form>
+                                <a href="quartos.html"><li>Quartos disponíveis</li></a>
+                            </form>
+                        </nav>
+                    </main>
+                </header>
+            </label>
+        </div>
 
         <footer id="rodape">
-            <p>Copyright &copy; 2019 - 2019 | Hotel Cição</p>
+            <p>Copyright &copy; 2019 - 2019 | HOTEL CIÇÃO | Todos os direitos reservados</p>
         </footer>
     </body>
 </html>
