@@ -24,7 +24,7 @@ body{
     top: 200px;
 }
 
-footer#cabecalho{
+header#cabecalho{
     background-color: #19213b;
     margin-top: -1%;
     margin-left: -1%;
@@ -64,12 +64,13 @@ footer#cabecalho{
     margin-bottom: -10px;
 }
 
-footer#cabecalho2{
+header#cabecalho2{
     padding-left: 50%;
     background-color: #f7f7f7;
     margin-top: 0%;
     margin-left: -1%;
     margin-right: -1%;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
     -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
 }
 
@@ -82,6 +83,9 @@ footer#cabecalho2{
     border-radius: 8px;
 }
 
+#lupa{
+    background: url(../icons/lupa.png);
+}
 
 .logo{
     width: 200px;
@@ -123,6 +127,7 @@ header#telaFlutuante{
     margin-left: -20%;
     margin-right: 10%;
     padding-bottom: 3%;
+    box-shadow: 0px 0px 100px rgba(0,0,0,.8);
     -webkit-box-shadow: 0px 0px 100px rgba(0,0,0,.8);
     border-radius: 30px;
 }
@@ -172,6 +177,8 @@ header#telaFlutuante h5{
 .espaco{
     display: flex;
 }
+
+
 
 main {
     margin-left: 2px;
@@ -254,6 +261,7 @@ nav#cadastro{
     text-align: center;
     border-radius: 30px;
     background-color: #19213b;
+    box-shadow: 0px 0px 1000px rgba(0,0,0,.8);
     -webkit-box-shadow: 0px 0px 1000px rgba(0,0,0,.8);
 }
 
@@ -309,7 +317,7 @@ l{
 .lbox{
     visibility: hidden;
     opacity: 0;
-    text: 0;
+    font-size: 0;
 }
 
 .lbox:target{
