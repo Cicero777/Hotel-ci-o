@@ -2,7 +2,7 @@
 
 body{
     background-color: #ffffff;
-    overflow: hidden;
+    overflow-x:hidden ;
 }
 
 .container {
@@ -490,4 +490,58 @@ img#q11{
 
     width: 513px;
     height: 180px;
+}
+
+/* Configurações do link quartos */
+
+#telaQuartos{
+    font-size: 15px;
+    font-family: bold;
+    margin-top: 3%;
+    margin-left: 6%;
+    
+}
+#cor{
+    color: aqua;
+}
+
+.quarto{
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+.info{
+    margin-left: 55%;
+}
+
+.aux{
+    margin-top: 4%;
+}
+
+.detalhes{
+    font-size: 30px;
+    font-family: bold;
+    color: aqua;
+}
+
+#left {
+  float:left;
+  width:250px;
+}
+#teste {
+  width:1000px;
+  margin-left:5px;
+  margin-top:5px;
+  margin-bottom: 50%;
+  float:left;
+  padding: 4px;
+}
+#teste1 {
+  width:1000px;
+  margin-left:5px;
+  margin-top:5px;
+  margin-bottom: 90px;
+  float:left;
+  padding: 4px;
 }
