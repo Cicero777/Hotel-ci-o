@@ -2,7 +2,7 @@
 
 body{
     background-color: #ffffff;
-    overflow-x:hidden ;
+    /*overflow-x:hidden ;*/
 }
 
 .container {
@@ -45,10 +45,9 @@ header#cabecalho{
     margin-bottom: -3px;
 }
 
-.icons2{
-    width: 15px;
-    height: 15px;
-    margin-left: 64%;
+
+nav#cabe span{
+    margin-right: 52%;
 }
 
 .icons3{
@@ -60,12 +59,12 @@ header#cabecalho{
 .icons4{
     width: 35px;
     height: 35px;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: -10px;
 }
 
 header#cabecalho2{
-    padding-left: 50%;
+    padding-left: 30%;
     background-color: #f7f7f7;
     margin-top: 0%;
     margin-left: -1%;
@@ -76,7 +75,7 @@ header#cabecalho2{
 
 .fieldCabecalho2{
     margin-left: 20%;
-    margin-bottom: 2%;
+    margin-bottom: -10%;
     text-align: center;
     font-size: 100%;
     border-bottom-color: gray;
@@ -116,14 +115,14 @@ header#meio h2{
 
 h3{
     color: white;
-    font-size: 2em;
+    font-size: 40pt;
     margin-top: -1%;
     margin-left: -10%;
 }
 
-header#telaFlutuante{
+div#telaFlutuante{
     background-color: #ffffff;
-    margin-top: 20%;
+    margin-top: 2%;
     margin-left: -20%;
     margin-right: 10%;
     padding-bottom: 3%;
@@ -165,12 +164,12 @@ header#telaFlutuante{
     text-align: center;
 }
 
-header#telaFlutuante h4{
+div#telaFlutuante h4{
     margin-top: 1%;
-    color: aqua;
+    color: #19213b;
 }
 
-header#telaFlutuante h5{
+div#telaFlutuante h5{
     margin-top: -3%;
 }
 
@@ -196,9 +195,7 @@ nav#menu{
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: -38px;
+    display: inline;
 }
 
 nav#menu li{
@@ -242,8 +239,8 @@ img#q6{
 footer#rodape{
     bottom: 0;
     position: fixed;
-    padding-left: 38%;
-    padding-right: 37%;
+    padding-left: 32%;
+    padding-right: 35%;
     background-color: #19213b;
 }
 
@@ -300,6 +297,9 @@ nav#butaoLogin {
 
 /* Configurações da Galeria */
 
+body#galeria{
+    overflow-y: hidden;
+}
 
 l{
     width: 880px;
@@ -348,18 +348,18 @@ l{
 }
 
 #prev{
-    left: 5%;
+    left: 11%;
     top: 45%;
 }
 
 #next{
-    right: 5%;
+    right: 11%;
     top: 45%;
 }
 
 #close{
-    top: 5%;
-    right: 8%;
+    top: 13%;
+    right: 18%;
 }
 
 .box_img img{
@@ -378,9 +378,9 @@ img#x{
 
 img#q{
     margin-top: -6%;
-    margin-left: -26%;
-    width: 1500px;
-    height: 750px;
+    margin-left: 0%;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -392,7 +392,7 @@ img#q{
     font-family: bold;
     margin-top: 3%;
     margin-left: 6%;
-    color: aqua;
+    color: #19213b;
 }
 
 .SubTituloContatos{
@@ -502,7 +502,7 @@ img#q11{
     
 }
 #cor{
-    color: aqua;
+    color: #19213b;
 }
 
 .quarto{
