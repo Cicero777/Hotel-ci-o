@@ -46,7 +46,7 @@ header#cabecalho{
 }
 
 
-nav#cabe span{
+nav#cabe span:not(#nome){
     margin-right: 52%;
 }
 

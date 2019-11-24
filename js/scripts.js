@@ -1,3 +1,9 @@
+var nome=document.getElementById("nome");
+var cook=getCookie("username");
+if(cook.length>0){
+    nome.innerHTML = cook;
+}
+
 function validar() {
     var nome = document.getElementById("txtNome");
     var nome2=nome.value;
@@ -38,11 +44,38 @@ function validar() {
     if(senha.length<6){
         return false;
     }
-    var cookie="username="+nome2+";nascimento="+nasc.value+";telefone="+telefone+";cpf="+cpf+";email="+email.value+";senha="+senha+"expires=Thu, 28 Nov 2019 12:00:00 UTC";
-    alert(cookie);
-    document.cookie = cookie;
-    alert(document.cookie);
+    setCookie("username",nome2,20000,"/");
+    var cookie2 = getCookie("username");
+    alert(cookie2);
 
+}
+
+function setCookie(k, v, expira, path) {
+    path = path || "/";
+
+    var d = new Date();
+    d.setTime(d.getTime() + (expira * 1000));
+
+    document.cookie = encodeURIComponent(k) + "=" + encodeURIComponent(v) + "; expires=" + d.toUTCString() + "; path=" + path;
+}
+
+function getCookie(k) {
+    var c = String(document.cookie).split(";");
+    var neq = k + "=";
+
+    for (var i = 0; i < c.length; i++) {
+        var d = c[i];
+
+        while (d.charAt(0) === " ") {
+            c[i] = c[i].substring(1, d.length);
+        }
+
+        if (c[i].indexOf(neq) === 0) {
+            return decodeURIComponent(c[i].substring(neq.length, c[i].length));
+        }
+    }
+
+    return null;
 }
 
 function validarIdade(){
