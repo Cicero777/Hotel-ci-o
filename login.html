@@ -7,15 +7,16 @@
     </head>
     <body>
         <header id="cabecalho" class="p2">
-            <nav>
+            <nav id="cabe">
                 <img class="icons" src="icons/telephone.png">
                 (123) 456-789-11230
                 <img class="icons" src="icons/message-icon-11-256.png">
-                hotelcicao@cicao.com
-                <a href=""><img class="icons2" src="icons/facebook.png"></a>
+                <span>hotelcicao@cicao.com</span>
+                <a href=""><img class="icons3" src="icons/facebook.png"></a>
                 <a href=""><img class="icons3" src="icons/instagram.png"></a>
                 <a href=""><img class="icons3" src="icons/whatsapp.png"></a>
                 <a href=""><img class="icons3" src="icons/twitter.png"></a>
+                <span id="nome"></span>
                 <a href="login.html"><img class="icons4" src="icons/login.png"></a>
             </nav>
         </header>
@@ -28,19 +29,18 @@
                     <a href="galeria.html"><li>GALERIA</li></a>
                     <a href="contatos.html"><li>CONTATOS</li></a>
                     <a href="sobre.html"><li>SOBRE</li></a>
-                    <input class="fieldCabecalho2" type="text" placeholder="buscar" id="txtbuscar">
-                    <input type="image" src="icons/lupa.svg" style="width: 20px; vertical-align: middle;" id="lupa">
                 </form>
             </nav>
         </header>
         <nav id="cadastro">
-            <form>
-                <input class="field" type="text" placeholder="E-mail" id="txtLogin"/>
-                <input class="field" type="password" placeholder="Senha" id="txtPassword"/>
+            <form onsubmit="return false">
+                <input class="field" type="text" placeholder="E-mail" id="txtLogin" required/>
+                <input class="field" type="password" placeholder="Senha" id="txtPassword" required/><br>
+                <span id="mensagem"></span><br>
+                <input type="submit" value="Login" id="enviar" onclick="validar()" placeholder="Login"/>
             </form>
             <nav id="menu">
                 <nav id="butaoLogin">
-                    <a href="index.html"><li class="cor">LOGIN</li></a>
                     <a href="cadastro.html"><li class="cor">CADASTRE-SE</li></a>
                 </nav>
             </nav>
@@ -48,5 +48,7 @@
         <footer id="rodape">
             <p>Copyright &copy; 2019.1 - 2019.2 | Hotel Cição | Todos os direitos reservados</p>
         </footer>
+        <script src="js/login.js"></script>
+        <script src="js/welcome.js"></script>
     </body>
 </html>

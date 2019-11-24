@@ -2,7 +2,8 @@
 
 body{
     background-color: #ffffff;
-    overflow-x:hidden ;
+    width: 98.5%;
+    /*overflow-x:hidden ;*/
 }
 
 .container {
@@ -12,8 +13,8 @@ body{
 #badyimagem{
     margin-top: 0%;
     margin-left: -8px;
-    width: 1920px;
-    height: 600px;
+    width: 101.5%;
+    height: 650px;
     position: absolute;
 }
 
@@ -25,7 +26,9 @@ body{
 }
 
 header#cabecalho{
+    position: relative;
     background-color: #19213b;
+    width: auto;
     margin-top: -1%;
     margin-left: -1%;
     margin-right: -1%;
@@ -45,10 +48,35 @@ header#cabecalho{
     margin-bottom: -3px;
 }
 
-.icons2{
-    width: 15px;
-    height: 15px;
-    margin-left: 64%;
+
+nav#cabe span:not(#nome){
+    margin-right: 45%;
+}
+
+span#nome{
+    margin-left: 2%;
+}
+
+span#mensagem{
+    margin-left: 1%;
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+span#mensagem2{
+    margin-left: 6%;
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+span#busca{
+    font-size: 10pt;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
 }
 
 .icons3{
@@ -60,13 +88,14 @@ header#cabecalho{
 .icons4{
     width: 35px;
     height: 35px;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: -10px;
 }
 
 header#cabecalho2{
-    padding-left: 50%;
-    background-color: #f7f7f7;
+    padding-left: 30%;
+    background-color: hsl(0, 0%, 97%);
+    width: auto;
     margin-top: 0%;
     margin-left: -1%;
     margin-right: -1%;
@@ -76,7 +105,7 @@ header#cabecalho2{
 
 .fieldCabecalho2{
     margin-left: 20%;
-    margin-bottom: 2%;
+    margin-bottom: -10%;
     text-align: center;
     font-size: 100%;
     border-bottom-color: gray;
@@ -91,7 +120,7 @@ header#cabecalho2{
     width: 200px;
     height: 50px;
     margin-top: 0%;
-    margin-left: -45%;
+    margin-left: -28%;
     position: absolute;
 }
 
@@ -116,14 +145,14 @@ header#meio h2{
 
 h3{
     color: white;
-    font-size: 2em;
+    font-size: 40pt;
     margin-top: -1%;
     margin-left: -10%;
 }
 
-header#telaFlutuante{
+div#telaFlutuante{
     background-color: #ffffff;
-    margin-top: 20%;
+    margin-top: 2%;
     margin-left: -20%;
     margin-right: 10%;
     padding-bottom: 3%;
@@ -145,32 +174,31 @@ header#telaFlutuante{
     height: 2px;
 }
 
-.caixaIndeix{
-    width: 75%;
-    padding-right: -2px;
-    padding-top: 25px;
-    margin-right: -10px;
-    font-size: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
 .caixaIndeix2{
-    width: 50%;
-    padding-right: -2px;
-    padding-top: 25px;
-    margin-right: -100px;
-    font-size: 20px;
-    border-radius: 5px;
-    text-align: center;
+    vertical-align: top;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
-header#telaFlutuante h4{
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+  vertical-align: middle;
+}
+
+div#telaFlutuante h4{
     margin-top: 1%;
-    color: aqua;
+    color: #19213b;
 }
 
-header#telaFlutuante h5{
+div#telaFlutuante h5{
     margin-top: -3%;
 }
 
@@ -196,9 +224,7 @@ nav#menu{
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: -38px;
+    display: inline;
 }
 
 nav#menu li{
@@ -240,11 +266,13 @@ img#q6{
 }
 
 footer#rodape{
-    bottom: 0;
-    position: fixed;
-    padding-left: 38%;
-    padding-right: 37%;
-    background-color: #19213b;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #19213b;
+  color: white;
+  text-align: center;
 }
 
 footer#rodape p{
@@ -256,7 +284,7 @@ nav#cadastro{
     padding-left: 0%;
     padding-top: 2%;
     width: 40%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 30%;
     text-align: center;
     border-radius: 30px;
@@ -300,6 +328,9 @@ nav#butaoLogin {
 
 /* Configurações da Galeria */
 
+body#galeria{
+    overflow-y: hidden;
+}
 
 l{
     width: 880px;
@@ -348,18 +379,18 @@ l{
 }
 
 #prev{
-    left: 5%;
+    left: 11%;
     top: 45%;
 }
 
 #next{
-    right: 5%;
+    right: 11%;
     top: 45%;
 }
 
 #close{
-    top: 5%;
-    right: 8%;
+    top: 13%;
+    right: 18%;
 }
 
 .box_img img{
@@ -378,9 +409,9 @@ img#x{
 
 img#q{
     margin-top: -6%;
-    margin-left: -26%;
-    width: 1500px;
-    height: 750px;
+    margin-left: 0%;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -392,7 +423,7 @@ img#q{
     font-family: bold;
     margin-top: 3%;
     margin-left: 6%;
-    color: aqua;
+    color: #19213b;
 }
 
 .SubTituloContatos{
@@ -502,7 +533,7 @@ img#q11{
     
 }
 #cor{
-    color: aqua;
+    color: #19213b;
 }
 
 .quarto{
@@ -545,6 +576,7 @@ img#q11{
   float:left;
   padding: 4px;
 }
+<<<<<<< HEAD
 #teste2 {
   width:1000px;
   margin-left:700px;
@@ -552,3 +584,35 @@ img#q11{
   float:left;
   padding: 4px;
 }
+=======
+
+/* login*/
+
+input#enviar{
+    padding: 2%;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 1px 1px 12px black;
+    color: #19213b;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+input#enviar:hover{
+    background-color: #0a9916;
+    color: #ffffff;
+    transition: 500ms;
+}
+
+nav#cadastro span{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav#cadastro input#txtNome,input#txtNascimento,input#txtContato{
+    margin-bottom: 0px;
+}
+>>>>>>> f8966e5953974433b75765ad8c4c7b0334e0b364
