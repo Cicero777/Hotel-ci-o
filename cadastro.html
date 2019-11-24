@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <title>Hotel Cição</title>
         <link rel="stylesheet" href="css/estilo.css" />
+        <script src="js/scripts.js"></script>
     </head>
     <body>
         <header id="cabecalho" class="p2">
@@ -32,17 +33,20 @@
             </nav>
         </header>
         <nav id="cadastro">
-            <form>
-                <input class="field" type="text" placeholder="Nome completo" id="txtNome">
-                <input class="field" type="text" placeholder="Data de nascimento" id="txtNascimento">
-                <input class="field" type="text" placeholder="Contato" id="txtContato">
-                <input class="field" type="text" placeholder="CPF" id="txtCPF">
-                <input class="field" type="text" placeholder="E-mail" id="txtLogin"/>
-                <input class="field" type="password" placeholder="Senha" id="txtPassword"/>
+            <form onsubmit="return false">
+                <input class="field" type="text" placeholder="Nome completo" id="txtNome" required><br/>
+                <span>somente maiores de idade podem se registrar</span><br>
+                <input class="field" type="date" placeholder="Data de nascimento" id="txtNascimento" required><br/>
+                <span>((XX) X XXXX-XXXX) Somente números</span><br/>
+                <input class="field" type="tel" pattern="[0-9]{11}" placeholder="Contato" oninput="validafone()" id="txtContato" required><br/>
+                <span>(XXX.XXX.XXX-XX) Somente números</span><br/>
+                <input class="field" type="text" pattern="[0-9]{11}" placeholder="CPF" oninput="validacpf()" id="txtCPF" required>
+                <input class="field" type="text" placeholder="E-mail" id="txtLogin" required>
+                <input class="field" type="password" placeholder="Senha" id="txtPassword" minlength="6" required><br/>
+                <input type="submit" value="Submit" id="enviar" onclick="validar()" placeholder="enviar"/>
             </form>
             <nav id="menu">
                 <nav id="butaoCadastro">
-                    <a href="index.html"><li class="cor">CADASTRAR</li></a>
                     <a href="login.html"><li class="cor">VOLTAR</li></a>
                 </nav>
             </nav>

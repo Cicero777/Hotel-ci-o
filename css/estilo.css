@@ -253,7 +253,7 @@ nav#cadastro{
     padding-left: 0%;
     padding-top: 2%;
     width: 40%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 30%;
     text-align: center;
     border-radius: 30px;
@@ -544,4 +544,34 @@ img#q11{
   margin-bottom: 90px;
   float:left;
   padding: 4px;
+}
+
+/* login*/
+
+input#enviar{
+    padding: 2%;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 1px 1px 12px black;
+    color: #19213b;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+input#enviar:hover{
+    background-color: #0a9916;
+    color: #ffffff;
+    transition: 500ms;
+}
+
+nav#cadastro span{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav#cadastro input#txtNome,input#txtNascimento,input#txtContato{
+    margin-bottom: 0px;
 }
