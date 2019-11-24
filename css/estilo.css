@@ -2,6 +2,7 @@
 
 body{
     background-color: #ffffff;
+    width: 98.5%;
     /*overflow-x:hidden ;*/
 }
 
@@ -12,8 +13,8 @@ body{
 #badyimagem{
     margin-top: 0%;
     margin-left: -8px;
-    width: 1920px;
-    height: 600px;
+    width: 101.5%;
+    height: 650px;
     position: absolute;
 }
 
@@ -25,7 +26,9 @@ body{
 }
 
 header#cabecalho{
+    position: relative;
     background-color: #19213b;
+    width: auto;
     margin-top: -1%;
     margin-left: -1%;
     margin-right: -1%;
@@ -54,6 +57,28 @@ span#nome{
     margin-left: 2%;
 }
 
+span#mensagem{
+    margin-left: 1%;
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+span#mensagem2{
+    margin-left: 6%;
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+span#busca{
+    font-size: 10pt;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+}
+
 .icons3{
     width: 15px;
     height: 15px;
@@ -69,7 +94,8 @@ span#nome{
 
 header#cabecalho2{
     padding-left: 30%;
-    background-color: #f7f7f7;
+    background-color: hsl(0, 0%, 97%);
+    width: auto;
     margin-top: 0%;
     margin-left: -1%;
     margin-right: -1%;
@@ -94,7 +120,7 @@ header#cabecalho2{
     width: 200px;
     height: 50px;
     margin-top: 0%;
-    margin-left: -45%;
+    margin-left: -28%;
     position: absolute;
 }
 
@@ -148,24 +174,23 @@ div#telaFlutuante{
     height: 2px;
 }
 
-.caixaIndeix{
-    width: 75%;
-    padding-right: -2px;
-    padding-top: 25px;
-    margin-right: -10px;
-    font-size: 20px;
-    border-radius: 5px;
-    text-align: center;
+.caixaIndeix2{
+    vertical-align: top;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
-.caixaIndeix2{
-    width: 50%;
-    padding-right: -2px;
-    padding-top: 25px;
-    margin-right: -100px;
-    font-size: 20px;
-    border-radius: 5px;
-    text-align: center;
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+  vertical-align: middle;
 }
 
 div#telaFlutuante h4{
@@ -241,11 +266,13 @@ img#q6{
 }
 
 footer#rodape{
-    bottom: 0;
-    position: fixed;
-    padding-left: 32%;
-    padding-right: 35%;
-    background-color: #19213b;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #19213b;
+  color: white;
+  text-align: center;
 }
 
 footer#rodape p{

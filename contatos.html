@@ -43,17 +43,20 @@
         </hgroup>
 
         <nav id="Mensagem">
-            <form>
-                <input class="BotNome" type="text" placeholder="Seu Nome" id="txtNome">
-                <input class="BotE-mail" type="text" placeholder="Seu E-mail" id="txtLogin"/>
-                <input class="BotTexto" type="text" placeholder="Sua Mensagem" id=""/>
-                <input class="BotaoEnviar" type="submit" placeholder="Enviar" id=""/>
+            <form onsubmit="return false">
+                <input class="BotNome" type="text" placeholder="Seu Nome" id="txtNome" required>
+                <input class="BotE-mail" type="text" placeholder="Seu E-mail" id="txtLogin" required/>
+                <span id="mensagem"></span>
+                <input class="BotTexto" type="text" placeholder="Sua Mensagem" id="browser" required/>
+                <input class="BotaoEnviar" type="submit" placeholder="Enviar" id="" onclick="enviar()"/>
             </form>
+            <span id="mensagem2"></span>
         </nav>
 
         <footer id="rodape">
             <p>Copyright &copy; 2019.1 - 2019.2 | Hotel Cição | Todos os direitos reservados</p>
         </footer>
         <script src="js/welcome.js"></script>
+        <script src="js/contato.js"></script>
     </body>
 </html>

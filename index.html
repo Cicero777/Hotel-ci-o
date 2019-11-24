@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/estilo.css" />
     </head>
     <body>
+        <div>
         <header id="cabecalho" class="p2">
             <nav id="cabe">
                     <img class="icons" src="icons/telephone.png">
@@ -43,25 +44,20 @@
                 <div id="telaFlutuante" class="telaFlutuante">
                     <h4>Encontrar quartos:</h4>
                     <main class="espaco">
-                        <form>
-                            <h5>Check-in</h5>
-                            <input class="caixaIndeix" type="text" placeholder="dd/mm/aa" id="txtData">
-                        </form>
-                        <form>
-                            <h5>Check-out</h5>
-                            <input class="caixaIndeix" type="text" placeholder="dd/mm/aa" id="txtData">
-                        </form>
-                        <form>
-                            <h5>Adultos</h5>
-                            <input class="caixaIndeix2" type="text" placeholder="00" id="txtData">
-                        </form>
-                        <form>
-                            <h5>Crianças</h5>
-                            <input class="caixaIndeix2" type="text" placeholder="00" id="txtData">
+                        <form onsubmit="return false" class="form-inline">
+                            <label>Check-in</label>
+                            <input class="caixaIndeix2" type="date" placeholder="dd/mm/aa" id="txtData1">
+                            <label>Check-out</label>
+                            <input class="caixaIndeix2" type="date" placeholder="dd/mm/aa" id="txtData2">
+                            <label>Adultos</label>
+                            <input class="caixaIndeix2" type="text" placeholder="00" id="txtData3">
+                            <label>Crianças</label>
+                            <input class="caixaIndeix2" type="text" placeholder="00" id="txtData4">
                         </form>
                         <nav id="menu">
                             <form>
-                                <a href="quartos.html"><li>Quartos disponíveis</li></a>
+                                <span id="busca"></span><br>
+                                <a  onclick='checkQuartos()'><li>Quartos disponíveis</li></a>
                             </form>
                         </nav>
                     </main>
@@ -73,5 +69,6 @@
             <p>Copyright &copy; 2019.1 - 2019.2 | HOTEL CIÇÃO | Todos os direitos reservados</p>
         </footer>
         <script src="js/welcome.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
