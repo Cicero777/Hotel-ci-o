@@ -1,8 +1,54 @@
-var nome=document.getElementById("nome");
-var cook=getCookie("username");
-if(cook.length>0){
-    nome.innerHTML = cook;
-}
+// var username = getCookie("username");
+// if(username != null && username != "")
+// {
+//     document.getElementById("nome").innerHTML = String("Bemvindo " + username);
+// } else
+// {
+//     username = prompt("Please enter your name:" , "");
+//     if(username != null && username != "")
+//     {
+//     setCookie("username" , username , 365);
+//     }
+// }
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+  function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        // alert("Welcome again " + user);
+        var check=getCookie("active");
+        if(check.includes("true")){
+            document.getElementById("nome").innerHTML = "Bemvindo "+user;
+        }
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+         setCookie("username", user, 30);
+       }
+    }
+  }
 
 function validar() {
     var nome = document.getElementById("txtNome");
@@ -44,39 +90,41 @@ function validar() {
     if(senha.length<6){
         return false;
     }
-    setCookie("username",nome2,20000,"/");
-    var cookie2 = getCookie("username");
-    alert(cookie2);
-
+    setCookie("username",nome2,20000000);
+    setCookie("senha",senha,20000000);
+    setCookie("email",email.value,20000000);
+    setCookie("active","false",20000000);
+    alert(document.cookie);
+    window.location.href = "login.html";
 }
 
-function setCookie(k, v, expira, path) {
-    path = path || "/";
+// function setCookie(k, v, expira, path) {
+//     path = path || "/";
 
-    var d = new Date();
-    d.setTime(d.getTime() + (expira * 1000));
+//     var d = new Date();
+//     d.setTime(d.getTime() + (expira * 1000));
 
-    document.cookie = encodeURIComponent(k) + "=" + encodeURIComponent(v) + "; expires=" + d.toUTCString() + "; path=" + path;
-}
+//     document.cookie = encodeURIComponent(k) + "=" + encodeURIComponent(v) + ";SameSite=None;Secure" +"; expires=" + d.toUTCString() + "; path=" + path;
+// }
 
-function getCookie(k) {
-    var c = String(document.cookie).split(";");
-    var neq = k + "=";
+// function getCookie(k) {
+//     var c = String(document.cookie).split(";");
+//     var neq = k + "=";
 
-    for (var i = 0; i < c.length; i++) {
-        var d = c[i];
+//     for (var i = 0; i < c.length; i++) {
+//         var d = c[i];
 
-        while (d.charAt(0) === " ") {
-            c[i] = c[i].substring(1, d.length);
-        }
+//         while (d.charAt(0) === " ") {
+//             c[i] = c[i].substring(1, d.length);
+//         }
 
-        if (c[i].indexOf(neq) === 0) {
-            return decodeURIComponent(c[i].substring(neq.length, c[i].length));
-        }
-    }
+//         if (c[i].indexOf(neq) === 0) {
+//             return decodeURIComponent(c[i].substring(neq.length, c[i].length));
+//         }
+//     }
 
-    return null;
-}
+//     return null;
+// }
 
 function validarIdade(){
     var nasc = document.getElementById("txtNascimento").value;

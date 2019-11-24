@@ -47,7 +47,11 @@ header#cabecalho{
 
 
 nav#cabe span:not(#nome){
-    margin-right: 52%;
+    margin-right: 45%;
+}
+
+span#nome{
+    margin-left: 2%;
 }
 
 .icons3{
