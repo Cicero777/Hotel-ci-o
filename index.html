@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8"/>
         <title> Hotel Cição </title>
@@ -23,7 +23,7 @@
             </header>
             <header id="cabecalho2" class="p2">
                 <img class="logo" src="icons/logo.jpg" alt="Logo">
-                <nav id="menu">
+                <nav class="menu">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="quartos.html">QUARTOS</a></li>
@@ -33,9 +33,10 @@
                     </ul>
                 </nav>
             </header>
+        </div>
         <div class="container">
-            <img id="badyimagem" src="fotos/index.jpg">
-            <label id="posicaoTexto">
+            <img id="badyimagem" src="fotos/index.jpg" alt="Foto">
+            <div id="posicaoTexto">
                 <div>
                     <hgroup>
                         <h3>BEM VINDO AO HOTEL CIÇÃO</h3>
@@ -46,23 +47,23 @@
                     <main class="espaco">
                         <form onsubmit="return false" class="form-inline">
                             <label>Check-in</label>
-                            <input class="caixaIndeix2" type="date" placeholder="dd/mm/aa" id="txtData1">
+                            <input class="caixaIndeix2" type="date" id="txtData1">
                             <label>Check-out</label>
-                            <input class="caixaIndeix2" type="date" placeholder="dd/mm/aa" id="txtData2">
+                            <input class="caixaIndeix2" type="date" id="txtData2">
                             <label>Adultos</label>
                             <input class="caixaIndeix2" type="text" placeholder="00" id="txtData3">
                             <label>Crianças</label>
                             <input class="caixaIndeix2" type="text" placeholder="00" id="txtData4">
                         </form>
-                        <nav id="menu">
+                        <nav class="menu">
                             <form>
                                 <span id="busca"></span><br>
-                                <a  onclick='checkQuartos()'><li>Quartos disponíveis</li></a>
+                                <a  onclick='checkQuartos()'>Quartos disponíveis</a>
                             </form>
                         </nav>
                     </main>
                 </div>
-            </label>
+            </div>
         </div>
 
         <footer id="rodape">
