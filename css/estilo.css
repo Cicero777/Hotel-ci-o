@@ -567,11 +567,11 @@ img#q11{
     color: aqua;
 }
 
-#left {
+.left {
   float:left;
   width:250px;
 }
-#teste {
+.teste {
   width:1000px;
   margin-left:5px;
   margin-top:5px;
