@@ -42,11 +42,6 @@ function setCookie(cname,cvalue,exdays) {
         if(check.includes("true")){
             document.getElementById("nome").innerHTML = "Bemvindo "+user;
         }
-    } else {
-       user = prompt("Please enter your name:","");
-       if (user != "" && user != null) {
-         setCookie("username", user, 30);
-       }
     }
   }
 

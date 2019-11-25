@@ -256,7 +256,7 @@ nav#menu a{
     text-decoration: none;
 }
 
-nav#menu li:hover{
+nav#menu a:hover{
     color: aqua;
     transition: 250ms;
 }
