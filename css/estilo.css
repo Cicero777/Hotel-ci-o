@@ -166,6 +166,10 @@ h3{
     margin-left: -10%;
 }
 
+div#telaFlutuante a{
+    cursor: pointer;
+}
+
 div#telaFlutuante{
     background-color: #ffffff;
     margin-top: 2%;
@@ -254,6 +258,7 @@ nav.menu li{
 nav.menu a{
     color: #000000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav.menu a:hover{
@@ -443,6 +448,10 @@ img.q{
     font-family: bold;
     margin-left: 6%;
     color: #000000;
+}
+
+#espaco{
+    margin-bottom: 8%;
 }
 
 .BotNome {
