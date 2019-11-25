@@ -6,6 +6,22 @@ body{
     overflow-x:hidden ;
 }
 
+body#quartos{
+    width: auto;
+    height: 150%;
+}
+
+.grow{
+    margin-left: 5%;
+    list-style: none;
+}
+
+.grow li{
+    display: inline;
+    margin-left: 6%;
+}
+
+
 .container {
     position: relative;
 }
@@ -329,10 +345,6 @@ nav#butaoLogin {
 
 /* Configurações da Galeria */
 
-body#galeria{
-    overflow-y: hidden;
-}
-
 l{
     width: 880px;
     list-style: none;
@@ -341,20 +353,17 @@ l{
     margin-top: 1%;
 }
 
-.min{
-    width: 150px;
-    padding: 30px;
-}
+
 
 .lbox{
-    visibility: hidden;
+    display: none;
     opacity: 0;
     font-size: 0;
 }
 
 .lbox:target{
     opacity: 1;
-    visibility: visible;
+    display: initial;
     width: 100%;
     height: 100%;
     top: 0;
@@ -379,17 +388,17 @@ l{
     text-align: center;
 }
 
-#prev{
+.prev{
     left: 11%;
     top: 45%;
 }
 
-#next{
+.next{
     right: 11%;
     top: 45%;
 }
 
-#close{
+.close{
     top: 13%;
     right: 18%;
 }
@@ -403,12 +412,13 @@ l{
     transition: opacity .4s linear;
 }
 
-img#x{
+img.x{
     width: 200px;
     height: 100px;
 }
 
-img#q{
+
+img.q{
     margin-top: -6%;
     margin-left: 0%;
     width: 100%;
