@@ -643,3 +643,28 @@ nav#cadastro input#txtNome,input#txtNascimento,input#txtContato{
     margin-left: 6%;
     color: #000000;
 }
+
+.dev{
+    float: left;
+    margin-right: 50%;
+    margin-bottom: 1%;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+}
+
+#devs{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    margin-bottom: 20%;
+}
+
+#de{
+    margin-left: 20%;
+}
+
+figcaption{
+    text-align: center;
+}
+
