@@ -36,18 +36,18 @@
             <form onsubmit="return false">
                 <input class="field" type="text" placeholder="Nome completo" id="txtNome" required><br/>
                 <span>somente maiores de idade podem se registrar</span><br>
-                <input class="field" type="date" placeholder="Data de nascimento" id="txtNascimento" required><br/>
+                <input class="field" type="date" id="txtNascimento" required><br/>
                 <span>((XX) X XXXX-XXXX) Somente números</span><br/>
                 <input class="field" type="tel" pattern="[0-9]{11}" placeholder="Contato" oninput="validafone()" id="txtContato" required><br/>
                 <span>(XXX.XXX.XXX-XX) Somente números</span><br/>
                 <input class="field" type="text" pattern="[0-9]{11}" placeholder="CPF" oninput="validacpf()" id="txtCPF" required>
                 <input class="field" type="text" placeholder="E-mail" id="txtLogin" required>
                 <input class="field" type="password" placeholder="Senha" id="txtPassword" minlength="6" required><br/>
-                <input type="submit" value="Submit" id="enviar" onclick="validar()" placeholder="enviar"/>
+                <input type="submit" value="Submit" id="enviar" onclick="validar()"/>
             </form>
             <nav id="menu">
                 <nav id="butaoCadastro">
-                    <a href="login.html"><li class="cor">VOLTAR</li></a>
+                    <a href="login.html" class ="cor">VOLTAR</a>
                 </nav>
             </nav>
         </nav>
