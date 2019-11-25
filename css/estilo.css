@@ -232,18 +232,18 @@ main {
     display: flex;
 }
 
-nav#menu{
+nav.menu{
     display: block;
     padding-top: 0%;
 }
 
-nav#menu ul{
+nav.menu ul{
     list-style: none;
     text-transform: uppercase;
     display: inline;
 }
 
-nav#menu li{
+nav.menu li{
     display: inline-block;
     margin: 2px;
     transition: background-color 1s;
@@ -251,12 +251,12 @@ nav#menu li{
     cursor: pointer;
 }
 
-nav#menu a{
+nav.menu a{
     color: #000000;
     text-decoration: none;
 }
 
-nav#menu a:hover{
+nav.menu a:hover{
     color: aqua;
     transition: 250ms;
 }
