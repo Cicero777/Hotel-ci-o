@@ -639,8 +639,7 @@ nav#cadastro input#txtNome,input#txtNascimento,input#txtContato{
     max-width: 900px;
     margin-right: 50px;
     margin-left: 950px;
-    margin-bottom: 80px;
-
+    
     font-size: 22px;
     font-family: bold;
     font-style: italic;
@@ -651,6 +650,7 @@ nav#cadastro input#txtNome,input#txtNascimento,input#txtContato{
     font-size: 20px;
     font-family: bold;
     margin-left: 6%;
+    margin-right: 50%;
     color: #000000;
 }
 
@@ -678,12 +678,9 @@ figcaption{
     text-align: center;
 }
 
-/* Tele para fazer reservar*/
+/* Tela para fazer reservar*/
 
 #botãoReservar{
-    width: 150px;
-    margin-bottom: 80px;
-    margin-top: 0%;
     float: left;
     
   }
