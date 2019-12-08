@@ -637,7 +637,8 @@ nav#cadastro input#txtNome,input#txtNascimento,input#txtContato{
 
 .textoQuartoFull {
     max-width: 900px;
-    margin-left: 850px;
+    margin-right: 50px;
+    margin-left: 950px;
     margin-bottom: 80px;
 
     font-size: 22px;
@@ -677,3 +678,12 @@ figcaption{
     text-align: center;
 }
 
+/* Tele para fazer reservar*/
+
+#botãoReservar{
+    width: 150px;
+    margin-bottom: 80px;
+    margin-top: 0%;
+    float: left;
+    
+  }
